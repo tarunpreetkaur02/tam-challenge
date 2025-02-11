@@ -1,23 +1,46 @@
-# Auth0 React SDK Sample Application
+# TAM Challenge Account Linking
 
-This sample demonstrates the integration of [Auth0 React SDK](https://github.com/auth0/auth0-react) into a React application created using [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html). The sample is a companion to the [Auth0 React SDK Quickstart](https://auth0.com/docs/quickstart/spa/react).
+This sample uses the [Auth0 React SDK Quickstart](https://auth0.com/docs/quickstart/spa/react). 
 
 This sample demonstrates the following use cases:
 
 - [Login](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/components/#L72-L79)
 - [Logout](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/components/NavBar.js#L102-L108)
 - [Showing the user profile](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/views/Profile.js)
+- [Account Linking using actions](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/auth0-actions/post-login-action.js)
+
+## Auth0 Configuration
+
+1. Go to [Auth0](https://auth0.com) and click **Sign Up**.
+2. Use Google, GitHub, or Microsoft Account to login.
+3. Create a **Single Page Application** in the [Auth0 Dashboard](https://manage.auth0.com/#/applications).
+
+> **If you're using an existing application**, verify that you have configured the following settings in your Single Page Application:
+>
+> - Click on the "Settings" tab of your application's page.
+> - Scroll down and click on the "Show Advanced Settings" link.
+> - Under "Advanced Settings", click on the "OAuth" tab.
+> - Ensure that "JsonWebToken Signature Algorithm" is set to `RS256` and that "OIDC Conformant" is enabled.
+
+Next, configure the following URLs for your application under the "Application URIs" section of the "Settings" page:
+
+- **Allowed Callback URLs**: `http://localhost:3000`
+- **Allowed Logout URLs**: `http://localhost:3000`
+- **Allowed Web Origins**: `http://localhost:3000`
+
+> These URLs should reflect the origins that your application is running on. **Allowed Callback URLs** may also include a path, depending on where you're handling the callback.
+
+Take note of the **Client ID** and **Domain** values under the "Basic Information" section. You'll need these values in the next step.
 
 ## Project setup
+Download the react quick start from https://auth0.com/docs/quickstart/spa/react/01-login 
+Prerequisite: node should be installed in the machine
 
 Use `yarn` to install the project dependencies:
 
 ```bash
 yarn install
 ```
-
-## Configuration
-
 
 ### Configure credentials
 
@@ -33,34 +56,11 @@ To do this, first copy `src/auth_config.json.example` into a new file in the sam
 ```
 
 
-
 ## Run the sample
+Run `npm install` to set up the environment.
 
-### Compile and hot-reload for development
+Run `npm start` to point your browser to https://localhost:3000/ to verify the example page works.
 
-This compiles and serves the React app and starts the backend API server on port 3001.
-
-```bash
-yarn run dev
-```
-
-## Deployment
-
-### Compiles and minifies for production
-
-```bash
-yarn run build
-```
-
-### Docker build
-
-To build and run the Docker image, run `exec.sh`, or `exec.ps1` on Windows.
-
-### Run your tests
-
-```bash
-yarn run test
-```
 
 ## Frequently Asked Questions
 
@@ -76,20 +76,3 @@ Auth0 helps you to:
 * Support for generating signed [JSON Web Tokens](https://auth0.com/docs/tokens/json-web-tokens) to call your APIs and **flow the user identity** securely.
 * Analytics of how, when, and where users are logging in.
 * Pull data from other sources and add it to the user profile through [JavaScript rules](https://auth0.com/docs/rules).
-
-## Create a Free Auth0 Account
-
-1. Go to [Auth0](https://auth0.com) and click **Sign Up**.
-2. Use Google, GitHub, or Microsoft Account to login.
-
-## Issue Reporting
-
-If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/responsible-disclosure-policy) details the procedure for disclosing security issues.
-
-## Author
-
-[Auth0](https://auth0.com)
-
-## License
-
-This project is licensed under the MIT license. See the [LICENSE](../LICENSE) file for more info.
