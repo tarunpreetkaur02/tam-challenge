@@ -32,8 +32,14 @@ Next, configure the following URLs for your application under the "Application U
 
 Take note of the **Client ID** and **Domain** values under the "Basic Information" section. You'll need these values in the next step.
 
+### Actions configuration
+> - Follow this doc `https://auth0.com/docs/customize/actions/write-your-first-action` to create a Post Login action.
+> - Use the code provided in the below link in the action created
+`https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/auth0-actions/post-login-action.js`
+
+
 ## Project setup
-Download the react quick start from https://auth0.com/docs/quickstart/spa/react/01-login 
+Download the react quick start from `https://auth0.com/docs/quickstart/spa/react/01-login`
 Prerequisite: node should be installed in the machine
 
 Use `yarn` to install the project dependencies:
