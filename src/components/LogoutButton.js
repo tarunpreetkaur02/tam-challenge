@@ -5,7 +5,7 @@ import {
   } from "reactstrap";
 
 const LogoutButton = () => {
-  const { loginWithRedirect,logout } = useAuth0();
+  const { logout } = useAuth0();
   const logoutWithRedirect = () =>
     logout({
         logoutParams: {
