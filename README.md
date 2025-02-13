@@ -4,10 +4,10 @@ This sample uses the [Auth0 React SDK Quickstart](https://auth0.com/docs/quickst
 
 This sample demonstrates the following use cases:
 
-- [Login](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/components/#L72-L79)
-- [Logout](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/components/NavBar.js#L102-L108)
-- [Showing the user profile](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/src/views/Profile.js)
-- [Account Linking using actions](https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/auth0-actions/post-login-action.js)
+- [Login](https://github.com/auth0-samples/auth0-react-samples/blob/master/tam-challenge/src/components/#L72-L79)
+- [Logout](https://github.com/auth0-samples/auth0-react-samples/blob/master/tam-challenge/src/components/NavBar.js#L102-L108)
+- [Showing the user profile](https://github.com/auth0-samples/auth0-react-samples/blob/master/tam-challenge/src/views/Profile.js)
+- [Account Linking using actions](https://github.com/auth0-samples/auth0-react-samples/blob/master/tam-challenge/auth0-actions/post-login-action.js)
 
 ## Auth0 Configuration
 
