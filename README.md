@@ -4,10 +4,10 @@ This sample uses the [Auth0 React SDK Quickstart](https://auth0.com/docs/quickst
 
 This sample demonstrates the following use cases:
 
-- [Login](https://github.com/auth0-samples/auth0-react-samples/blob/master/tam-challenge/src/components/#L72-L79)
-- [Logout](https://github.com/auth0-samples/auth0-react-samples/blob/master/tam-challenge/src/components/NavBar.js#L102-L108)
-- [Showing the user profile](https://github.com/auth0-samples/auth0-react-samples/blob/master/tam-challenge/src/views/Profile.js)
-- [Account Linking using actions](https://github.com/auth0-samples/auth0-react-samples/blob/master/tam-challenge/auth0-actions/post-login-action.js)
+- [Login](https://github.com/tarunpreetkaur02/tam-challenge/tree/main/src/components)
+- [Logout](https://github.com/tarunpreetkaur02/tam-challenge/src/components/NavBar.js#L102-L108)
+- [Showing the user profile](https://github.com/tarunpreetkaur02/tam-challenge/src/views/Profile.js)
+- [Account Linking using actions](https://github.com/tarunpreetkaur02/tam-challenge/auth0-actions/post-login-action.js)
 
 ## Auth0 Configuration
 
@@ -35,7 +35,7 @@ Take note of the **Client ID** and **Domain** values under the "Basic Informatio
 ### Actions configuration
 > - Follow this doc `https://auth0.com/docs/customize/actions/write-your-first-action` to create a Post Login action.
 > - Use the code provided in the below link in the action created
-`https://github.com/auth0-samples/auth0-react-samples/blob/master/Sample-01/auth0-actions/post-login-action.js`
+`https://github.com/tarunpreetkaur02/tam-challenge/auth0-actions/post-login-action.js`
 
 
 ## Project setup
